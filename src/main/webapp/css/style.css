@@ -406,10 +406,10 @@ figure {
     background: #fff;
     color: #6c63ff;
     border: 1px solid #6c63ff;
-    width: 100%; /* Occupy full width */
+    width: 100%;
     padding: 15px;
     border-radius: 5px;
-    margin-top: 15px; /* Adjust margin as needed */
+    margin-top: 15px;
     cursor: pointer;
     text-decoration: none;
 }
@@ -706,7 +706,7 @@ form.d-flex button[type="submit"]:hover {
 	.newsletter {
 	flex-direction: column;}
     .newsletter-signup-button {
-        margin-top: 15px; /* Adjust margin for spacing */
+        margin-top: 15px;
     }
 
 	.terms-container {
