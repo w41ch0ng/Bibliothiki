@@ -18,9 +18,9 @@ import de.svws_nrw.ext.jbcrypt.BCrypt;
 @WebServlet("/register")
 public class registrationServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	String user = System.getProperty("DB_USER");
-    String dbPassword = System.getProperty("DB_PASSWORD");
-    String url = System.getProperty("DB_URL");
+	String user = System.getenv("DB_USER");
+    String dbPassword = System.getenv("DB_PASSWORD");
+    String url = System.getenv("DB_URL");
 
 
 	@Override

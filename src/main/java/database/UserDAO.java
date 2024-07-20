@@ -17,9 +17,9 @@ public class UserDAO {
 	User oneUser = null;
 	Connection conn = null;
     Statement stmt = null;
-    String user = System.getProperty("DB_USER");
-    String password = System.getProperty("DB_PASSWORD");
-    String url = System.getProperty("DB_URL");
+    String user = System.getenv("DB_USER");
+    String password = System.getenv("DB_PASSWORD");
+    String url = System.getenv("DB_URL");
 
     public UserDAO() {}
 	

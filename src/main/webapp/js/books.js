@@ -1,9 +1,8 @@
-console.log("books.js is loaded!");
 function createBookCard(book) {
   return `
     <div class="col-md-4 mt-4 mb-4">
       <div class="card book-card">
-      <a href="/Books?id=${book.id}">
+      <a href="/bibliothiki/Books?id=${book.id}">
         <img src="${book.imageURL}" class="card-img-top" alt="${book.title}">
         <div class="card-body">
           <h5 class="card-title">${book.title}</h5>
@@ -41,7 +40,7 @@ function handleSearch(event) {
 	}
 
 function fetchSearchResults(query) {
-  fetch(`/BookAPI?search=${encodeURIComponent(query)}`)
+  fetch(`/bibliothiki/BookAPI?search=${encodeURIComponent(query)}`)
     .then((response) => response.json())
     .then((data) => {
       console.log("Fetched search results:", data);
@@ -53,7 +52,7 @@ function fetchSearchResults(query) {
 }
 
 function fetchAllBooks() {
-  fetch("/BookAPI")
+  fetch("/bibliothiki/BookAPI")
     .then((response) => response.json())
     .then((data) => {
       console.log("Fetched all data:", data);

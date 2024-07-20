@@ -17,9 +17,9 @@ public class BookDAO {
 	Connection conn = null;
     Statement stmt = null;
     ResultSet result = null;
-    String user = System.getProperty("DB_USER");
-    String password = System.getProperty("DB_PASSWORD");
-    String url = System.getProperty("DB_URL");
+    String user = System.getenv("DB_USER");
+    String password = System.getenv("DB_PASSWORD");
+    String url = System.getenv("DB_URL");
 
     public BookDAO() {}
 
@@ -69,7 +69,7 @@ public class BookDAO {
 		openConnection();
 		
 		try{
-			PreparedStatement stmt = conn.prepareStatement("select * from books");
+			PreparedStatement stmt = conn.prepareStatement("SELECT * FROM books");
 		    ResultSet rs1 = stmt.executeQuery();
 		    while(rs1.next()){
 		    	oneBook = getNextBook(rs1);

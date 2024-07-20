@@ -20,9 +20,9 @@ import de.svws_nrw.ext.jbcrypt.BCrypt;
 @WebServlet("/login")
 public class login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	String user = System.getProperty("DB_USER");
-    String dbPassword = System.getProperty("DB_PASSWORD");
-    String url = System.getProperty("DB_URL");
+	String user = System.getenv("DB_USER");
+    String dbPassword = System.getenv("DB_PASSWORD");
+    String url = System.getenv("DB_URL");
 
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
