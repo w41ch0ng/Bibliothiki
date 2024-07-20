@@ -70,12 +70,10 @@ String name = (String) session.getAttribute("name");
 		
 		<div class="about-content">
 			<h3 class="about-title">About the Bibliothiki Project</h3>
-				<p>I am excited to share with you the journey of creating this unique, never-done-before, one-of-a-kind dynamic web application.
-				 The project was developed using a wide range of technologies, including <span class="bold">Java</span> and 
+				<p>The Bibliothiki project was developed using a wide range of technologies, including <span class="bold">Java</span> and 
 				 <span class="bold">JavaScript</span>, <span class="bold">MySQL</span>, as the DBMS, and <span class="bold">Bootstrap</span> as a 
-				 front-end framework, among others. Through a combination of these technologies and the application of 
-				 knowledge gained from my studies in <span class="bold">MSc Computer Science</span>, coupled with extensive independent research, 
-				 I have brought this project to life.</p>
+				 front-end framework. This project serves as a Full-Stack demonstration, with front-end, back-end, and database
+				 implementations.</p>
 		</div>
 		<div class="about-image">
 			<figure>
@@ -97,8 +95,8 @@ String name = (String) session.getAttribute("name");
 		</div>
 		<div class="about-content-opposite">
 			<h3 class="about-title">Back-End Technologies</h3>
-				<p><span class="bold">Java</span> and <span class="bold">Java Servlets</span> formed the backbone of the project's server-side implementation, providing robust and scalable solutions to handle user interactions and data processing. 
-				<span class="bold">JavaScript</span>, including libraries such as <span class="bold">jQuery</span>, were instrumental in delivering a seamless and interactive user experience, allowing for dynamic content and smooth user interactions, such as asynchronous searches.</p>
+				<p><span class="bold">Java</span> and <span class="bold">Java Servlets</span> formed the backbone of the project's server-side implementation to handle user interactions and data processing. 
+				<span class="bold">JavaScript</span>, including libraries such as <span class="bold">jQuery</span>, were instrumental in delivering an interactive user experience, allowing for dynamic content and smooth user interactions, such as asynchronous searches.</p>
 		</div>
 	</div>
 	
@@ -110,9 +108,8 @@ String name = (String) session.getAttribute("name");
 		
 		<div class="about-content">
 			<h3 class="about-title">Data Management</h3>
-				<p>For data storage and retrieval, <span class="bold">MySQL</span> was utilised; a powerful and reliable relational database management system. 
-				This enabled me to efficiently manage data-sets (such as a table with <span class="bold">5</span> whole books!) while ensuring data integrity and security.
-				<span class="bold">jBCrypt</span> has also played an integral role in this project's data management, allowing for secure user <span class="bold">password hashing</span> to ensure high security 
+				<p>For data storage and retrieval, <span class="bold">MySQL</span> is utilised to manage data-sets (such as a table with <span class="bold">5</span> whole books!) while ensuring data integrity and security.
+				<span class="bold">jBCrypt</span> has also played an integral role in this project's data management, allowing for secure user <span class="bold">password hashing</span> to ensure security 
 				standards are being met.</p>
 		</div>
 		<div class="about-image">
@@ -135,28 +132,9 @@ String name = (String) session.getAttribute("name");
 		</div>
 		<div class="about-content-opposite">
 			<h3 class="about-title">Front-End Development</h3>
-				<p>Front-end development was centered around <span class="bold">HTML</span> and <span class="bold">CSS</span>, the foundation of every web page. 
-				I designed an intuitive and visually appealing user interface, making navigation effortless for the <span class="bold">5</span> users that will end up going on this website. 
-				Additionally, I leveraged <span class="bold">Bootstrap</span>, a popular CSS framework, to achieve responsiveness and compatibility across various devices.</p>
-		</div>
-	</div>
-	
-</section>
-
-<section class="about-5">
-
-	<div class="container mt-3 d-sm-flex">
-		<div class="about-content">
-			<h3 class="about-title">Academic Insights and Independent Research</h3>
-				<p>The development of this project was not only an application of technical skills but also a journey of continuous learning. 
-				Drawing from the knowledge gained from my studies in <span class="bold">MSc Computer Science</span>, this project, among others I have done, 
-				provided an opportunity to apply best practices in software engineering, security, and system architecture, adhering to industry standards.</p>
-		</div>
-		
-		<div class="about-image">
-			<figure>
-				<img src="images/teacher.svg" alt="teacher">
-			</figure>
+				<p>Front-end development was centered around <span class="bold">HTML</span> and <span class="bold">CSS</span>. 
+				A responsive and intuitive user interface is used, making navigation effortless for the <span class="bold">5</span> users that will end up checking this out. 
+				Additionally, <span class="bold">Bootstrap</span> was leveraged, a popular CSS framework, to achieve responsiveness and compatibility across various devices.</p>
 		</div>
 	</div>
 	
@@ -165,17 +143,9 @@ String name = (String) session.getAttribute("name");
 <section class="about-6">
 
 	<div class="container mt-3 d-sm-flex">
-		
-		<div class="about-image about-image-even">
-			<figure>
-				<img src="images/icons.svg" alt="icons">
-			</figure>
-		</div>
-		<div class="about-content-opposite">
-			<h3 class="about-title">Hosting Services and Illustration Credits</h3>
-				<p>To best demonstrate multiple skills, the services chosen to host this project have also been carefully selected. The database for the project
-				is hosted on <span class="bold">PlanetScale</span>, with the project itself being hosted on <span class="bold">AWS</span> through 
-				<span class="bold">Elastic Beanstalk</span>. 
+		<div class="about-content">
+			<h3 class="about-title">Illustration Credits</h3>
+				<p>
 				The illustrations used in the project are from the open source project <a href="https://undraw.co" 
             target="_blank"
             rel="noopener noreferrer">
@@ -187,6 +157,12 @@ String name = (String) session.getAttribute("name");
     <span class="bold">icons8</span>
 </a>.</p>
 
+		</div>
+		
+		<div class="about-image">
+			<figure>
+				<img src="images/icons.svg" alt="icons">
+			</figure>
 		</div>
 	</div>
 	

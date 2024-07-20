@@ -288,6 +288,12 @@ body {
 	max-width: 350px;
 }
 
+.learn-more-buttons {
+	display: flex;
+	padding: 10px 10px;
+	gap: 10px;
+}
+
 .about-content {
 	padding: 25px 15px;
 }

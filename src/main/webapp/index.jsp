@@ -74,9 +74,7 @@ String name = (String) session.getAttribute("name");
 		
 		<div class="index-content index-content-1">
 			<h2>Welcome to Bibliothiki.</h2>
-				<p>The library has over 5 books to view. No one said it was the best library. Or even a good one.
-					You also can't purchase any of these books as this isn't a real library, simply a project. But at least you can save
-					them to a dedicated reading list. We have that.</p>
+				<p>A simple book library project.</p>
 					<div class="form-group form-button">
 					  <a href="Books" class="form-submit">Browse Books</a>
 					</div>
@@ -124,12 +122,15 @@ String name = (String) session.getAttribute("name");
 		
 		<div class="index-content index-content-3">
 			<h2>About the Bibliothiki Project</h2>
-				<p>The Bibliothiki library project was made as a Cloud Development, Full-Stack demonstration,
-				 utilising different technologies.</p>
+				<p>The Bibliothiki library project was made as a Cloud Development, Full-Stack demonstration.</p>
+				<div class="learn-more-buttons">
 					<div class="form-group form-button">
-					  <a href="about.jsp" class="form-submit">Learn more about Bibliothiki</a>
+					  <a href="about.jsp" class="form-submit">Learn more</a>
 					</div>
-
+					<div class="form-group form-button">
+					  <a href="https://github.com/w41ch0ng/Bibliothiki" class="form-submit">Source Code</a>
+					</div>
+				</div>
 		</div>
 		
 	</div>
