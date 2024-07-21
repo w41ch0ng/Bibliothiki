@@ -3,6 +3,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
+  <a href="https://github.com/w41ch0ng/Bibliothiki">
+    <img src="https://img.icons8.com/metro/26/6C63FF/book.png" alt="Logo" width="40" height="40">
+  </a>
 
 <h3 align="center">Bibliothiki</h3>
 
@@ -26,6 +29,7 @@
     </li>
     <li><a href="#features">Features</a></li>
     <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#credits">Credits</a></li>
   </ol>
 </details>
 
@@ -88,15 +92,15 @@ After succesfully connecting, three tables must be created - 'books', 'users', a
 
 For the 'books' table, enter this query in MySQL workbench:
 
-[![Books-query][books-query]]
+![Books-query][books-query]
 
 For the 'users' table, enter this query:
 
-[![User-query][user-query]]
+![User-query][user-query]
 
 For the 'user-reading-list' table, enter this:
 
-[![User-reading-list-query][user-reading-list-query]]
+![User-reading-list-query][user-reading-list-query]
 
 Finally, to set up the DB connection, environment variables must be set. In your IDE, find the environment variables page (in Eclipse, right click the project > Run As > Run Configurations > Environment), and set:
 
@@ -110,6 +114,16 @@ You should now be set up!
 
 > [!IMPORTANT]
 > (Books must be uploaded through MySQL workbench, however creating users must be done through the application itself after setup. This is due to jbCrypt's password hashing; passwords must be set and accessed hashed, and so creating an account manually with a password that has not been hashed will not be picked up when logging in, for example).
+
+<!-- CREDITS -->
+
+## Credits
+
+Project icon: <a href="https://icons8.com" target="_blank" rel="noopener noreferrer"> <span class="bold">icons8</span></a>
+</br>
+Illustrations: <a href="https://undraw.co" target="_blank" rel="noopener noreferrer"><span class="bold">unDraw</span></a>
+</br>
+Registration system help from <a href="https://www.youtube.com/watch?v=zdWfyBXO2iU" target="_blank" rel="noopener noreferrer"><span class="bold">@UniqueDeveloper</span></a>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
