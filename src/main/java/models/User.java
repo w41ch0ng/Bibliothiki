@@ -2,15 +2,17 @@ package models;
 
 public class User {
 
+    // Package-private instance variables to hold user data
 	int id;
 	String username;
 	String password;
 	String email;
 	String phone;
-	
-	
+
+    // Constructor to initialise User object with all attributes
 	public User(int id, String username, String password, String email, String phone) {
 
+		// Sets attributes to variables
 		this.id = id;
 		this.username = username;
 		this.password = password;
@@ -20,7 +22,8 @@ public class User {
 	}
 
 	public User() {}
-
+	
+	// Getters and setters for attributes
 		public int getID() {
 			return id;
 		}
@@ -61,6 +64,7 @@ public class User {
 			this.phone = phone;
 		}
 
+	// Override toString() method to provide string representation of User object
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", username=" + username + ", password=" + password + ", email=" + email + ", phone=" + phone

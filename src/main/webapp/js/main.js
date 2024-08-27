@@ -1,25 +1,34 @@
+// Function to show confirmation dialogue before deleting user account
 function confirmDelete(event) {
-    event.preventDefault();
+    event.preventDefault(); // Prevent default action (form submission) from occurring
 
+    // Display confirmation dialogue using SweetAlert
     swal({
         title: "Are you sure?",
         text: "Once deleted, you will not be able to recover your account!",
         icon: "warning",
-        buttons: true,
-        dangerMode: true,
+        buttons: true, // Show 'OK' and 'Cancel' buttons
+        dangerMode: true, // Highlight 'OK' button to indicate action is 'dangerous'
     })
-    .then((willDelete) => {
+    .then((willDelete) => { // Handle the user's response
         if (willDelete) {
+            // If user confirms deletion, submit delete form
             document.getElementById("delete-form").submit();
         } else {
+            // If user cancels, do nothing
         }
     });
 }
 
+// Event listener that runs when DOM fully loaded
 document.addEventListener("DOMContentLoaded", function () {
+    // Get status element by ID
     let statusElement = document.getElementById("status");
+    // Retrieve value of status element, if it exists
     let status = statusElement ? statusElement.value : '';
 
+    // Display different SweetAlert error messages based on status value
+    
     if (status === "failed") {
         swal("Login Failed", "Incorrect E-mail or Password", "error");
     }
