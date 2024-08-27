@@ -81,7 +81,7 @@ Set up a Tomcat (v9.0) server - documentation <a href="https://tomcat.apache.org
 
 Set up a local MySQL server - documentation <a href="https://dev.mysql.com/downloads/mysql/">here</a>.
 
-Also download MySQL Workbench to work with the local server - found here <a href="https://www.mysql.com/products/workbench/">here</a>.
+Also download MySQL Workbench to work with the local server - found <a href="https://www.mysql.com/products/workbench/">here</a>.
 
 Configure login details for the environment variables that will be used to make a connection to the local DB.
 
